@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_correspondence_analysis",
+  "source_file": "Correspondance_Analysis.sas",
+  "source_blob_sha": "55638973a278794d70d318b3d4bb870144a8a385",
+  "source_commit": "52fd0c9b3421924882d0055148c768aad17621b2",
+  "notes": "PROC CORRESP biplot of BMI_Group x Fibrosis. Original read a SAS-Studio-uploaded nafld.csv via FILENAME REFFILE and called %web_drop_table/%web_open_table (SAS Studio session helpers, undefined outside that IDE). Replaced with inline DATALINES sampling 25 BMI/Fibrosis pairs from this repo's own NAFLD_imputed.csv. Also retargeted the closing PROC PRINT from the original's 'coords' (never created) to 'Coord' (the outc= dataset PROC CORRESP actually produces) -- a bug in the original script, not a Jenner substitution."
+}

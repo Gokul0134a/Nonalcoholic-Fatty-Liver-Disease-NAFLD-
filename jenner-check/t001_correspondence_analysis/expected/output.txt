@@ -1,0 +1,67 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: nafld
+Observations:  25
+Variables:     2
+
+Variables (in alphabetical order):
+
+  #  Variable  Type    Len  Format  Label
+---  --------  ----  -----  ------  -----
+  1  BMI        Num      8          
+  2  Fibrosis   Num      8          
+
+-------------------------------------------------------------------------------
+
+                     The CORRESP Procedure
+
+              Inertia and Chi-Square Decomposition
+
+                                                       Cumulative
+  Dimension    Singular     Principal       Chi-       Proportion
+                 Value       Inertia     Square
+  ---------------------------------------------------------------
+          1     0.3632       0.1319       3.30          0.8782
+          2     0.1352       0.0183       0.46          1.0000
+  ---------------------------------------------------------------
+  Total                      0.1502       3.76
+
+              Row Coordinates
+
+  BMI_Group               Dim1        Dim2
+  ----------------------------------------
+  Normal               0.7374      0.2424
+  Obese               -0.2395      0.0256
+  Overweight           0.3719     -0.2324
+
+              Column Coordinates
+
+  Fibrosis                Dim1        Dim2
+  ----------------------------------------
+  0                   -0.0641     -0.1277
+  1                    0.4338      0.1130
+  2                   -0.6594      0.1891
+  3                    0.4338      0.1130
+
+
+              Observed Contingency Table
+
+  BMI_Group            0           1           2           3         Sum
+  ------------------------------------------------------------------------
+  Normal          1.0000      1.0000      0.0000      1.0000      3.0000
+  Obese           9.0000      2.0000      4.0000      2.0000     17.0000
+  Overweight      3.0000      1.0000      0.0000      1.0000      5.0000
+  Sum            13.0000      4.0000      4.0000      4.0000     25.0000
+
+  Obs  _TYPE_        _NAME_      DIM1      DIM2
+-----  ------  ------------  --------  --------
+    1  ROW     Normal          0.7374    0.2424
+    2  ROW     Obese          -0.2395    0.0256
+    3  ROW     Overweight      0.3719   -0.2324
+    4  COLUMN  0              -0.0641   -0.1277
+    5  COLUMN  1               0.4338    0.1130
+    6  COLUMN  2              -0.6594    0.1891
+    7  COLUMN  3               0.4338    0.1130
+

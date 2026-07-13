@@ -1,0 +1,122 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: nafld
+Observations:  64
+Variables:     18
+
+Variables (in alphabetical order):
+
+  #  Variable          Type    Len  Format  Label
+---  ----------------  ----  -----  ------  -----
+  1  Age                Num      8          
+  2  ALT                Num      8          
+  3  AST                Num      8          
+  4  BMI                Num      8          
+  5  Cirrhosis          Num      8          
+  6  DBP                Num      8          
+  7  Diyabetes          Num      8          
+  8  Gender             Num      8          
+  9  GGT                Num      8          
+ 10  Glucose            Num      8          
+ 11  HDL                Num      8          
+ 12  Hyperlipidemia     Num      8          
+ 13  Hypertension       Num      8          
+ 14  Insulin            Num      8          
+ 15  LDL                Num      8          
+ 16  SBP                Num      8          
+ 17  TotalCholesterol   Num      8          
+ 18  Triglycerides      Num      8          
+
+-------------------------------------------------------------------------------
+
+
+The SURVEYSELECT Procedure
+
+Selection Method     SRS
+Input Data Set       nafld
+Number of Obs Read   64
+Sample Size          64
+Sampling Weight      1.0000
+                                     
+---------------------------  --------
+Number of Observations Read        45
+Number of Observations Used        45
+
+            Response Profile             
+  Probability modeled is CIRRHOSIS='1'   
+
+Ordered Value  CIRRHOSIS  Total Frequency
+-------------  ---------  ---------------
+            1  0                       30
+            2  1                       15
+
+  Class Level Information   
+
+Class       Levels  Values  
+--------  --------  --------
+GENDER           2  1 2     
+
+                                             
+---------------------------------------------
+Convergence criterion (GCONV=1E-8) satisfied.
+
+                                                                                                                     
+---------------------------------------------------------------------------------------------------------------------
+WARNING: There is possibly a quasi-complete separation of data points. The maximum likelihood estimate may not exist.
+
+The LOGISTIC Procedure
+Response Variable: CIRRHOSIS
+
+Criterion     Value
+---------  --------
+AIC          53.497
+-2 Log L     17.497
+SC           86.017
+
+               Analysis of Maximum Likelihood Estimates                
+
+Parameter         Estimate  Standard Error  Wald Chi-Square  Pr > ChiSq
+----------------  --------  --------------  ---------------  ----------
+Intercept         -17.3278          9.9138           3.0550      0.0805
+AGE                 0.1334          0.0980           1.8544      0.1733
+GENDER              1.2938          1.3331           0.9420      0.3318
+BMI                 0.3131          0.1724           3.2970      0.0694
+SBP                 0.0136          0.0713           0.0362      0.8490
+DBP                -0.0502          0.0938           0.2861      0.5927
+DIYABETES           2.5347          1.9189           1.7449      0.1865
+HYPERTENSION        0.9283          1.5747           0.3475      0.5555
+HYPERLIPIDEMIA     -0.9838          1.5242           0.4167      0.5186
+AST                 0.0492          0.0369           1.7763      0.1826
+ALT                -0.0046          0.0248           0.0338      0.8541
+GGT                 0.0041          0.0166           0.0619      0.8035
+TOTALCHOLESTEROL    0.0016          0.0199           0.0068      0.9342
+TRIGLYCERIDES       0.0054          0.0087           0.3902      0.5322
+HDL                 0.0361          0.0711           0.2574      0.6119
+LDL                -0.0348          0.0280           1.5546      0.2125
+GLUCOSE            -0.0066          0.0186           0.1253      0.7234
+INSULIN            -0.0001          0.0438           0.0000      0.9981
+
+                         Odds Ratio Estimates                         
+
+Effect            Point Estimate  95% Wald CL Lower  95% Wald CL Upper
+----------------  --------------  -----------------  -----------------
+GENDER                     3.647              0.267             49.729
+AGE                        1.143              0.943              1.385
+BMI                        1.368              0.975              1.918
+SBP                        1.014              0.881              1.166
+DBP                        0.951              0.791              1.143
+DIYABETES                 12.613              0.293            542.222
+HYPERTENSION               2.530              0.116             55.410
+HYPERLIPIDEMIA             0.374              0.019              7.415
+AST                        1.050              0.977              1.129
+ALT                        0.995              0.948              1.045
+GGT                        1.004              0.972              1.037
+TOTALCHOLESTEROL           1.002              0.963              1.041
+TRIGLYCERIDES              1.005              0.988              1.023
+HDL                        1.037              0.902              1.192
+LDL                        0.966              0.914              1.020
+GLUCOSE                    0.993              0.958              1.030
+INSULIN                    1.000              0.918              1.090
+

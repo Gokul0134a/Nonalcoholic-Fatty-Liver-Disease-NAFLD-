@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_logistic_roc",
+  "source_file": "GLM.sas",
+  "source_blob_sha": "c704eca3b84c54982b94c79603929f7ccad0608c",
+  "source_commit": "52fd0c9b3421924882d0055148c768aad17621b2",
+  "notes": "70/30 PROC SURVEYSELECT train/test split, PROC LOGISTIC predicting Cirrhosis from 16 clinical/biochemical predictors with a CLASS(ref=) Gender effect, and a PROC SGPLOT ROC curve. Original read a SAS-Studio-uploaded nafld.csv via FILENAME REFFILE and called %web_drop_table/%web_open_table session helpers; its predictor list also used named-literal columns (\"Systolic Blood Pressure\"n etc.) from an earlier, unshipped nafld.csv rather than this repo's actual NAFLD_imputed.csv column names. Replaced with inline DATALINES (all 24 Cirrhosis=1 patients + 40 sampled Cirrhosis=0 patients from this repo's own NAFLD_imputed.csv) and retargeted predictor names to the shipped CSV's columns (SBP, DBP, Diyabetes, TotalCholesterol). The original's `ods output ROCcurve=rocdata` had no PLOTS=ROC/ROC statement/OUTROC= to actually populate it -- a bug in the student's own script, not touched here since it wouldn't have worked under real SAS either -- so this bundle adds PLOTS=ROC to PROC LOGISTIC and gets the curve points into rocdata via the MODEL statement's documented OUTROC= option instead."
+}

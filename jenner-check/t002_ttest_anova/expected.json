@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-13T08:05:00Z",
+  "_captured_run_id": "capture",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote work_import (30 rows, 4 columns).",
+    "NOTE: PROC CONTENTS completed: 30 observations, 4 variables",
+    "NOTE: PROC ANOVA: 30 observations, 1 effects analyzed",
+    "NOTE: PROC TTEST statement used."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
