@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_ttest_anova",
+  "source_file": "t-test,Anova.sas",
+  "source_blob_sha": "7e2d0163c8bee91ad5aae81dada71f67390edfce",
+  "source_commit": "52fd0c9b3421924882d0055148c768aad17621b2",
+  "notes": "Two PROC ANOVA models (BMI and Age by Fibrosis stage, each with Tukey pairwise means) plus PROC TTEST of BMI by Gender. Original read a SAS-Studio-uploaded nafld.csv via FILENAME REFFILE and called the %web_drop_table/%web_open_table session helpers. Replaced with inline DATALINES sampling Age/Gender/BMI/Fibrosis for 30 patients from this repo's own NAFLD_imputed.csv. Analysis logic unchanged."
+}

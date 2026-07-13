@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-13T08:00:00Z",
+  "_captured_run_id": "r_b304efe567cd4a21867872fa7e7d3da8",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote nafld (25 rows, 2 columns).",
+    "NOTE: PROC CONTENTS completed: 25 observations, 2 variables",
+    "NOTE: Output dataset FreqTable has 10 observations and 4 variables.",
+    "NOTE: PROC CORRESP completed.",
+    "NOTE: PROC PRINT completed: 7 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
